@@ -1,5 +1,3 @@
-# TinTinaland-
-
 交易哈希：
 
 ```
@@ -13,18 +11,21 @@
 //在ethsacn中可以直接获得
 ```
 
-代码：
+还原代码：
+
 ```
 from web3 import Web3
 import json
-web3 = Web3(Web3.HTTPProvider('https://goerli.infura.io/v3/###########################'))
+web3 = Web3(Web3.HTTPProvider('https://goerli.infura.io/v3/#######################'))
 tx_hash ="0xefd91225fa06b4de166c6f9b31cf452bf888c40193a9b8db0ba96e0832df4da9"
 tx = web3.eth.get_transaction(tx_hash)
 print(tx)
-//get_transaction(byte32 txHash)   返回解码后的交易信息
+//get_transaction(byte32 txHash) return 交易信息后自动解码
 ```
 
-返回信息：
+还原结果：
+
+```
 AttributeDict(
 {'accessList': [],
 'blockHash':HexBytes('0xbbe908a4bd719d85dd77f3c5c2a4a7670b721edea632bc55e31e8528ec9084fb'), 
@@ -32,7 +33,8 @@ AttributeDict(
 'chainId': 5, 
 'from': '0xfA4E41A12B5f92A223eDBB62601899B39cF6334c', 
 'gas': 21000, 
-'gasPrice': 12938010956, 'hash': HexBytes('0xefd91225fa06b4de166c6f9b31cf452bf888c40193a9b8db0ba96e0832df4da9'), 'input': '0x', 
+'gasPrice': 12938010956, 'hash': HexBytes('0xefd91225fa06b4de166c6f9b31cf452bf888c40193a9b8db0ba96e0832df4da9'), 
+'input': '0x', 
 'maxFeePerGas': 15972812047,
 'maxPriorityFeePerGas': 1500000000, 'nonce': 0, 
 'r': HexBytes('0xc239d394b206a1db82fce4656eb9d53d00f9172eb831b5590f253695c9800b45'),
