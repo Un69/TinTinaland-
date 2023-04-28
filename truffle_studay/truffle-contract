@@ -35,4 +35,4 @@ contract MintableERC721 is ERC721URIStorage,Ownable {
             _CUR_TOKENID_ = _CUR_TOKENID_ + 1 ;
         }
     }
-}
+} 
